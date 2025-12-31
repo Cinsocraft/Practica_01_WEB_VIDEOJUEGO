@@ -18,7 +18,7 @@ let autoSlide;
 let arrDots=document.querySelectorAll(".dot");
 console.log(arrDots);
 
-showSlide(slideIndex);
+showSlide(slideIndex); /* */
 
 
 startAutoslide();
@@ -107,12 +107,12 @@ function showSlide(slideNumber){
     console.log(slideIndex);
     for (let i=0; i<maxSlide; i++){
         arrSlide[i].style.display = "none";
-        arrDots[i].className=arrDots[i].className.replace(" active", "");
+        arrDots[i].className=arrDots[i].className.replace(".active", ""); /* */
     }
 
     // Mostramos eñ slide que  coincide con el índice
     arrSlide[slideIndex - 1].style.display = "block";
-    arrDots[slideIndex -1].className += " active";
+    arrDots[slideIndex -1].className += ".active";
 }
 
 // Automatizamos la llamada a la función nextPrevSlide() usando la función built-in serInterval().
@@ -135,3 +135,4 @@ function stopAutoslide(){
 clearInterval(autoSlide);
 
 }
+
