@@ -1,6 +1,7 @@
 :root {
     --menu-bg: yellowgreen;
     --menu-text: black;
+    
 }
 
 /*Plantilla copiada de Adrían*/
@@ -31,7 +32,7 @@ img {
 
 body {
     background-color: rgba(0, 0, 255, 0.1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Darumadrop One;
 }
 
 header {
@@ -123,6 +124,64 @@ main > section.hero > div:last-child > img {
 
 main > section.hero > div:last-child > img:hover {
     filter: drop-shadow(12px 12px 8px black);
+}
+
+/* ===== BETA SECTION ===== */
+.beta {
+    background-color: #e9b595;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.beta h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.beta-form {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.beta-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Darumadrop One;
+}
+
+.beta-form input {
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+    border: 3px solid #777;
+    background-color: #e6e6e6;
+    font-size: 1rem;
+    outline: none;
+    font-family: Darumadrop One;
+}
+
+.beta-form input::placeholder {
+    color: #9a9a9a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .beta {
+        padding: 2rem 1rem;
+    }
+
+    .beta-form {
+        max-width: 100%;
+    }
 }
 
 
