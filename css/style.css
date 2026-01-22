@@ -349,12 +349,12 @@ main > #gallery > .gallery-cont {
         font-size: 12px;
     }
 
-    /* main > section.hero > div:first-child > h2 {
+    main > section.hero > div:first-child > h2 {
         font-size: 3rem;
     }
     main > section.hero > div:first-child > p {
         font-size: 1rem;
-    } */
+    } 
     
     main > section.hero > div:last-child {
         width: 100%;
