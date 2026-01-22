@@ -129,12 +129,12 @@ main > section.hero > div:last-child > img:hover {
 /* ===== BETA SECTION ===== */
 .beta {
     background-color: #e9b595;
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
 }
 
@@ -173,17 +173,29 @@ main > section.hero > div:last-child > img:hover {
     color: #9a9a9a;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-    .beta {
-        padding: 2rem 1rem;
-    }
 
-    .beta-form {
-        max-width: 100%;
-    }
+
+
+/*Footer*/
+
+footer{
+
+    background-color: #D78356;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    text-align: center;
 }
 
+footer > div{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
 
 /* Me permite seleccionar un elemento hijo por posicion */
 /* main > section.hero > div:nth-child(5) {
@@ -314,8 +326,19 @@ main > #gallery > .gallery-cont {
     }
 }
 
-
 /* MEDIA QUERY */
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .beta {
+        padding: 2rem 1rem;
+    }
+
+    .beta-form {
+        max-width: 100%;
+    }
+}
 
 /* TABLET */
 @media screen and (max-width: 690px) {
