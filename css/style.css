@@ -244,6 +244,7 @@ footer > div{
 .btn-group{
     display: flex;
     gap: 24px;
+    padding: 10px
 }
 
 
@@ -253,10 +254,11 @@ footer > div{
     font-weight: bold;
     border-radius: 8px;
     font-size: 15px;
+    
 }
 
 .btn-group > a:first-child{
-    background-color: rgb(252, 255, 96);
+    background-color: #FF9FE2;
     color:rgb(14, 21, 27);
     transition: 500ms;
 }
