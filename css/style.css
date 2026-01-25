@@ -174,22 +174,18 @@ main > section.hero > div:last-child > img:hover {
 }
 
 /* ===== FOOD SECTION =====*/
-#fotocomida{
-    width: 10%;
-    height: 10%;
+.comida{
+    width: 15%;
+    height: 15%;
 }
 
 .comida>:first-child{
-    margin-top: 0%;
-    
+    margin-top: 20%;
+    margin-left: 15%;    
 
 }
 
-.comida>:second-child{
-
-}
-
- .bodyComida {
+.bodyComida {
     background-image: url(../media/imagen/Capibara.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
