@@ -175,12 +175,17 @@ main > section.hero > div:last-child > img:hover {
 
 /* ===== FOOD SECTION =====*/
 #fotocomida{
-    width: 80px;
-    height: 80px;
+    width: 10%;
+    height: 10%;
 }
 
 .comida>:first-child{
-    margin-top: 10%;
+    margin-top: 0%;
+    
+
+}
+
+.comida>:second-child{
 
 }
 
