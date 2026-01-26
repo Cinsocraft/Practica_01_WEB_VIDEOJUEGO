@@ -174,15 +174,37 @@ main > section.hero > div:last-child > img:hover {
 }
 
 /* ===== FOOD SECTION =====*/
-.comida{
-    width: 15%;
-    height: 15%;
+.comida>div{
+    position: absolute;
 }
 
-.comida>:first-child{
-    margin-top: 20%;
-    margin-left: 15%;    
+.comida>div>img{
+    position: absolute;
+}
 
+.manzana{
+    left: 10%; 
+    top: 25%;
+    width: 250px; 
+    height: auto;
+    display: block;
+}
+
+.seta{
+    left: 35%;
+    top: 35%;
+    width: 250px; 
+    height: auto;
+    display: block;
+}
+
+
+.manzana_nevada{
+    left: 69%;
+    top: 50%;
+    width: 250px; 
+    height: auto;
+    display: block;
 }
 
 .bodyComida {
@@ -190,6 +212,13 @@ main > section.hero > div:last-child > img:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+ }
+
+ .texto{
+    margin: 0;
+    font-family: Darumadrop One;
+    font-size: 28px;
+    color: #fff;
  }
 
 
