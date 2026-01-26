@@ -199,7 +199,7 @@ main > section.hero > div:last-child > img:hover {
 }
 
 
-.manzana_nevada{
+.manzananevada{
     left: 69%;
     top: 50%;
     width: 250px; 
@@ -215,10 +215,15 @@ main > section.hero > div:last-child > img:hover {
  }
 
  .texto{
-    margin: 0;
+    margin: 3%;
+    padding: 3%;
     font-family: Darumadrop One;
     font-size: 28px;
     color: #fff;
+ }
+
+ #descripcion1{
+    
  }
 
 
