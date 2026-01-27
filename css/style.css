@@ -185,15 +185,15 @@ main > section.hero > div:last-child > img:hover {
 .manzana{
     left: 10%; 
     top: 25%;
-    width: 250px; 
+    width: 300px; 
     height: auto;
     display: block;
 }
 
 .seta{
-    left: 35%;
+    left: 36%;
     top: 35%;
-    width: 250px; 
+    width: 300px; 
     height: auto;
     display: block;
 }
@@ -202,7 +202,7 @@ main > section.hero > div:last-child > img:hover {
 .manzananevada{
     left: 69%;
     top: 50%;
-    width: 250px; 
+    width: 350px; 
     height: auto;
     display: block;
 }
@@ -222,8 +222,9 @@ main > section.hero > div:last-child > img:hover {
     color: #fff;
  }
 
- #descripcion1{
-    
+ #descripcion3{
+    left: 69%;
+    top: 50%;
  }
 
 
