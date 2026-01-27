@@ -200,7 +200,7 @@ main > section.hero > div:last-child > img:hover {
 
 
 .manzananevada{
-    left: 69%;
+    left: 68%;
     top: 50%;
     width: 350px; 
     height: auto;
@@ -219,14 +219,18 @@ main > section.hero > div:last-child > img:hover {
     padding: 3%;
     font-family: Darumadrop One;
     font-size: 28px;
+    text-align: justify;
     color: #fff;
  }
 
- #descripcion3{
-    left: 69%;
-    top: 50%;
+ .texto > div{
+    position: absolute;
  }
 
+ .descripcion1{
+    left: 10%; 
+    top: 50%;
+ }
 
 /* ===== MAP =====*/
 
