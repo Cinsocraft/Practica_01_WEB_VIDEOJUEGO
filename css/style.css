@@ -194,8 +194,22 @@ main > section.hero > div:last-child > img:hover {
     color: #fff;
 }
 
-.manzana>p{
-    left:30%;
+.manzana p {
+    transform: translateX(160px); 
+    font-size: 50px;
+    color: #fff;
+}
+
+.seta p {
+    transform: translateX(140px); 
+    font-size: 50px;
+    color: #fff;
+}
+
+.manzananevada p {
+    transform: translateX(160px);
+    font-size: 50px;
+    color: #fff;
 }
 
 .seta{
@@ -259,8 +273,8 @@ main > section.hero > div:last-child > img:hover {
  }
 
  .descripcion4{
-    left: 80%; 
-    top: 20%;
+    left: 85%; 
+    top: 30%;
  }
 
 
