@@ -183,28 +183,44 @@ main > section.hero > div:last-child > img:hover {
 }
 
 .manzana{
-    left: 8%; 
-    top: 20%;
-    width: 300px; 
+    left: 9%; 
+    top: 12%;
+    width: 350px; 
     height: auto;
     display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzana>p{
+    left:30%;
 }
 
 .seta{
-    left: 33%;
-    top: 30%;
+    left: 36%;
+    top: 28%;
     width: 300px; 
     height: auto;
     display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
 }
 
 
 .manzananevada{
-    left: 66%;
-    top: 45%;
+    left: 68%;
+    top: 38%;
     width: 350px; 
     height: auto;
     display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
 }
 
 .bodyComida {
@@ -229,23 +245,25 @@ main > section.hero > div:last-child > img:hover {
 
  .descripcion1{
     left: 5%; 
-    top: 60%;
+    top: 70%;
  }
 
   .descripcion2{
-    left: 35%; 
-    top: 68%;
+    left: 36%; 
+    top: 63%;
  }
 
 .descripcion3{
-    left: 60%; 
-    top: 35%;
+    left: 66%; 
+    top: 83%;
  }
 
  .descripcion4{
     left: 80%; 
     top: 20%;
  }
+
+
 /* ===== MAP =====*/
 
 
