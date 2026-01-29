@@ -378,6 +378,10 @@ main > #gallery > .gallery-cont {
 /* Hide the maps by default */
 .Maps {
     display: none;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* This classes will be interacted through js */
@@ -391,10 +395,10 @@ main > #gallery > .gallery-cont {
 
 .Tiquet{
     max-width: 720px;
-    position: fixed;
+    position:fixed;
     bottom: 0px;
     left: 25%;
-    margin: auto;
+    margin: 0px;
 }
 
 /* Defining the buttons positions */
@@ -428,20 +432,21 @@ main > #gallery > .gallery-cont {
 }
 
 .mapDescription,.mapName{
-    position: fixed;
+    position: absolute;
     z-index: 2;
-    left: 29.5%;
+    left: 11.5%;
+    font-family: Darumadrop One;
 }
 
 .mapName{
-    bottom: 15%;
+    bottom: 47.5%;
     color: #3d40ff;
     font-size: 25px;
     
 }
 
 .mapDescription{
-    top: 86%;
+    top: 56%;
     color: #000000;
     font-size: 15px;
     max-width: 380px;

@@ -83,6 +83,7 @@ function nextPrevSlide (Index) {
  */
 function showSlide (slideNumber) {
     let arrSlides = document.querySelectorAll(".Maps");
+    let arrDesc = document.querySelectorAll(".mapText")
     let maxSlides = arrSlides.length;
 
 
@@ -97,10 +98,12 @@ function showSlide (slideNumber) {
 
     for (let i = 0; i < maxSlides; i++) {
         arrSlides[i].style.display = "none";
+        arrDesc[i].style.display = "none";
         arrDots[i].className = arrDots[i].className.replace(" active", "");
     }
 
     arrSlides[slideIndex-1].style.display = "block";
+    arrDesc[slideIndex-1].style.display = "block";
     arrDots[slideIndex - 1].className += " active";
 }
 
