@@ -367,3 +367,87 @@ main > #gallery > .gallery-cont {
 
 
 }
+
+/*Maps*/
+.SlideMaps-Container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the maps by default */
+.Maps {
+    display: none;
+}
+
+/* This classes will be interacted through js */
+.show-Map {
+    display: block;
+}
+
+.hide-Map {
+    display: none;
+}
+
+.Tiquet{
+    max-width: 720px;
+    position: fixed;
+    bottom: 0px;
+    left: 25%;
+    margin: auto;
+}
+
+/* Defining the buttons positions */
+
+.map-prev { 
+    transform: rotate(180deg);
+    left: 370px;
+}
+
+.map-prev,
+.map-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 415px;
+    width: 40px;
+    margin-top: -22px;
+    padding: 0px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.map-prev { 
+    left: 370px;
+}
+
+.map-prev:hover,
+.map-next:hover {
+    top: 49.5%;
+}
+
+.mapDescription,.mapName{
+    position: fixed;
+    z-index: 2;
+    left: 29.5%;
+}
+
+.mapName{
+    bottom: 15%;
+    color: #3d40ff;
+    font-size: 25px;
+    
+}
+
+.mapDescription{
+    top: 86%;
+    color: #000000;
+    font-size: 15px;
+    max-width: 380px;
+}
+
+.dot{
+    display: none;
+}
+
