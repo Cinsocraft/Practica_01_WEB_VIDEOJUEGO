@@ -102,8 +102,9 @@ main {
 
 .seleccion {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center;
     align-items: center;
     gap: 15px;  
-    transform: translateX(-600px); 
+    transform: translateX(-600px);  */
 }
