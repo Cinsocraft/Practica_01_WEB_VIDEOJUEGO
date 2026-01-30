@@ -32,21 +32,39 @@ body {
 }
 
 header {
-    background-color: rgb(32, 0, 61);
+   background-color: rgba(255, 255, 255, 0);
     /* padding: 2rem 3rem;
     margin: 1rem 2rem 3rem 7rem; */
     padding: 3rem;
-    height: 50vh;
+    height: 90vh;
     /* width: 50%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+   /* Para el condo de las montañas */
+    background-image: url(../media/imagen/Fondo_Montaña.png); 
+    background-size: cover;
 }
 
-header > h1,
+/* header > h1,
 header > p {
-    color: aliceblue;
+    
+    color: #e7b092;
+}
+header >div:first-child{
+   position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -2;
+}
+header > div:first-child > img{
+        object-fit: cover;
+} */
+header > div:last-child{
+    position: absolute;
+    width: 100%;
+    bottom: 0vh;
 }
 
 nav {
