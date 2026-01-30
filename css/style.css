@@ -52,11 +52,10 @@ header > p {
     color: aliceblue;
 }
 header >div:first-child{
-    position: absolute;
+   position: absolute;
     width: 100%;
-    bottom: 0vh;
+    bottom: 0;
     z-index: -2;
-    position: fixed;
 }
 header > div:first-child > img{
         object-fit: cover;
@@ -109,6 +108,8 @@ main > section {
     max-width: 1200px;
 }
 
+/* -----HERO 1----- */
+
 main > section.hero {
     display: flex;
     gap: 1rem;
@@ -146,15 +147,51 @@ main > section.hero > div:last-child > img:hover {
     filter: drop-shadow(12px 12px 8px black);
 }
 
+/* -----HERO2----- */
+
+main > section.hero2{
+     align-items: center;
+}
+
+main > section.hero2 > div:last-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+main > section.hero2 > div:last-child > h2 {
+    font-size: 6rem;
+    color:  var(--menu-bg);
+    text-shadow: 2px 2px 2px;
+}
+main > section.hero2 > div:last-child > p {
+    font-size: 1.6rem;
+}
+
+main > section.hero2 > div:first-child {
+    width: 50%;
+}
+main > section.hero2 > div:first-child > img{
+    width: 50%;
+    height: 50%;
+}
+main > section.hero2 > div:first-child > img:hover{
+    width: 100%;
+    max-width: 420px;  
+    margin: 0 auto;
+    display: block;
+}
+
 /* ===== BETA SECTION ===== */
 .beta {
     background-color: #d78356;
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
 }
 
@@ -193,16 +230,53 @@ main > section.hero > div:last-child > img:hover {
     color: #9a9a9a;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-    .beta {
-        padding: 2rem 1rem;
-    }
-
-    .beta-form {
-        max-width: 100%;
-    }
+/* -----FOOTER--- */
+footer{
+    background-color: #D78356;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    text-align: center;
 }
+footer > div {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+/* ---Botones--- */
+.btn-group{
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+}
+.btn-group > a{
+    padding: 8px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.btn-group > a:first-child{
+    background-color: #FF9FE2;
+    color: rgb(14, 21, 27);
+    transition: 500ms;
+}
+.btn-group > a:last-child{
+    border: 1px black solid;
+}
+
+.btn-group > a:first-child:hover{
+    background-color: rgb(189, 165, 136);
+    
+}
+.btn-group > a:last-child:hover{
+     background-color: rgb(136, 136, 136);
+}
+
 
 
 /* Me permite seleccionar un elemento hijo por posicion */
@@ -336,6 +410,16 @@ main > #gallery > .gallery-cont {
 
 
 /* MEDIA QUERY */
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .beta {
+        padding: 2rem 1rem;
+    }
+
+    .beta-form {
+        max-width: 100%;
+    }
+}
 
 /* TABLET */
 @media screen and (max-width: 690px) {
