@@ -180,6 +180,14 @@ main > section.hero > div:last-child > img:hover {
 
 .comida>div>img{
     position: absolute;
+    width: 300px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.comida>div>img:hover{
+    opacity: 0.9;
+    transform:scale(1);
 }
 
 .manzana{
@@ -198,19 +206,38 @@ main > section.hero > div:last-child > img:hover {
     transform: translateX(160px); 
     font-size: 50px;
     color: #fff;
+    transition: 0.6s;
+    font-size: 120%;
+}
+
+.manzana p:hover {
+  transform: translateX(160px) scale(1.05);
 }
 
 .seta p {
     transform: translateX(140px); 
     font-size: 50px;
     color: #fff;
+    transition: 0.6s;
+    font-size: 120%;
+}
+
+.seta p:hover {
+  transform: translateX(160px) scale(1.05);
 }
 
 .manzananevada p {
     transform: translateX(160px);
     font-size: 50px;
     color: #fff;
+    transition: 0.6s;
+    font-size: 110%;
 }
+
+.manzananevada p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
 
 .seta{
     left: 36%;
@@ -260,23 +287,56 @@ main > section.hero > div:last-child > img:hover {
  .descripcion1{
     left: 5%; 
     top: 70%;
+    transition: 0.6s;
+    font-size: 105%;
+    text-shadow: 0.6s;
  }
+
+ .descripcion1:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
 
   .descripcion2{
     left: 36%; 
     top: 63%;
+    transition: 0.6s;
+    font-size: 105%;
+    text-shadow: 0.6s;
  }
+
+ .descripcion2:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
 
 .descripcion3{
     left: 66%; 
     top: 83%;
+    transition: 0.6s;
+    font-size: 105%;
+    text-shadow: 0.6s;
  }
+
+ .descripcion3:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
 
  .descripcion4{
-    left: 85%; 
+    position:absolute;
+    left: 80%; 
     top: 30%;
+    transition: 0.6s;
+    font-size: 120%;
+    text-shadow: 0.6s;
  }
 
+.descripcion4:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
 
 /* ===== MAP =====*/
 
