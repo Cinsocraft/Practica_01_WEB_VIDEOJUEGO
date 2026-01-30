@@ -45,11 +45,15 @@ header {
     flex-direction: column;
     justify-content: end;
     align-items: center;
+   /* Para el condo de las montañas */
+    background-image: url(../media/imagen/Fondo_Montaña.png); 
+    background-size: cover;
 }
 
-header > h1,
+/* header > h1,
 header > p {
-    color: aliceblue;
+    
+    color: #e7b092;
 }
 header >div:first-child{
    position: absolute;
@@ -59,12 +63,11 @@ header >div:first-child{
 }
 header > div:first-child > img{
         object-fit: cover;
-}
+} */
 header > div:last-child{
     position: absolute;
     width: 100%;
     bottom: 0vh;
-    z-index: -1;
 }
 
 nav {
@@ -138,7 +141,7 @@ main > section.hero > div:last-child {
 }
 
 main > section.hero > div:last-child > img {
-    /* box-shadow: 3px 3px 3px black; */
+ 
     filter: drop-shadow(3px 3px 4px black);
     transition: 0.3s;
 }
@@ -148,13 +151,20 @@ main > section.hero > div:last-child > img:hover {
 }
 
 /* -----HERO2----- */
-
+.hero2 img {
+   width: auto;
+    max-width: 420px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(3px 3px 4px black);
+    transition: 0.3s;
+}
 main > section.hero2{
-     align-items: center;
+    align-items: center;
 }
 
 main > section.hero2 > div:last-child {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,9 +193,11 @@ main > section.hero2 > div:first-child > img:hover{
     display: block;
 }
 
+
 /* ===== BETA SECTION ===== */
 .beta {
-    background-color: #d78356;
+ background-color: #e7b092;
+
     min-height: 30vh;
     display: flex;
     flex-direction: column;
@@ -233,16 +245,13 @@ main > section.hero2 > div:first-child > img:hover{
 /* -----FOOTER--- */
 footer{
     background-color: #D78356;
-    min-height: 10vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: left;
     padding: 1rem 1rem;
     text-align: center;
 }
 footer > div {
-    width: 20%;
+    width: 10%;
     display: flex;
     flex-direction: row;
     gap: 0.6rem;
@@ -250,31 +259,28 @@ footer > div {
 
 /* ---Botones--- */
 .btn-group{
-    display: flex;
-    gap: 24px;
-    padding: 10px;
+     margin-top: 2rem;
 }
 .btn-group > a{
-    padding: 8px 10px;
+    display: inline-block;
+    padding: 1.2rem 3.5rem;
+    background-color: #ffb3e6;    
+    font-size: 2.2rem;
     font-weight: bold;
-    border-radius: 8px;
-    font-size: 15px;
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn-group > a:first-child{
     background-color: #FF9FE2;
     color: rgb(14, 21, 27);
     transition: 500ms;
-}
-.btn-group > a:last-child{
-    border: 1px black solid;
-}
-
-.btn-group > a:first-child:hover{
-    background-color: rgb(189, 165, 136);
     
 }
+
 .btn-group > a:last-child:hover{
-     background-color: rgb(136, 136, 136);
+    background-color: #eb6dc1;     
 }
 
 
@@ -366,6 +372,7 @@ main > #gallery > .gallery-cont {
     width: 100%;
     text-align: center;
 }
+
 
 /* Number text (1/3 etc) */
 .numbertext {
