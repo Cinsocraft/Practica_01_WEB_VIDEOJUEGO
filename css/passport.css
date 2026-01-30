@@ -24,12 +24,11 @@ main {
 
 
 
-/* PARTE SUPERIOR */
+/* PARTE SUPERIOR PASAPORTE*/
 
 
 
 .montain-password {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -47,7 +46,6 @@ main {
 }
 
 
-
 .button-check {
     width: 100px;
     height: 100px;
@@ -57,7 +55,7 @@ main {
 
 
 
-/* PARTE INFERIOR */
+/* PARTE INFERIOR PASAPORTE*/
 
 .passport-bottom {
     background-color: burlywood;
