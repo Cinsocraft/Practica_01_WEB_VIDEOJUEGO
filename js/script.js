@@ -137,5 +137,34 @@ clearInterval(autoSlide);
 }
 
 // Personaje editor
+console.log= ("Hola");
 
-document.getElementById("").src="";
+let skinYellowbtn = document.getElementById("skinYellow");
+
+let skinRedbtn = document.getElementById("skinYellow");
+
+let skinOraganbtn = document.getElementById("skinOragen");
+
+let imgchange = document.getElementById("imgchange");
+
+
+
+skinRedbtn.onclick = function() {
+
+    imgchange.src = "media\imagen\Pasaporte_Cuerpo_Rojo.png";
+
+}
+
+
+skinYellowbtn.onclick = function(){
+
+    imgchange.src = "media\imagen\Pasaporte_Cuerpo_Amarillo.png";
+
+}
+
+
+skinOraganbtn.onclick = function(){
+    imgchange.src= "media\imagen\Pasaporte_Cuerpo_Naranja.png";
+}
+
+// "media\imagen\Pasaporte_Cuerpo_Naranja.png";
