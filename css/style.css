@@ -394,7 +394,145 @@ main > section.hero2 > div:first-child > img:hover {
 
 /* ===== PASSPORT =====*/
 
+.Main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../media/imagen/Fondo_pasaporte.png);
+    background-repeat: repeat; 
+    background-size: auto;     
+}
 
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.passport-top {
+    margin-inline: 10%;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+}
+
+
+
+/* PARTE SUPERIOR PASAPORTE*/
+
+
+
+.montain-password {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.montain-password>img {
+    width: 100px;
+    margin-bottom: -50px;
+}
+
+.montain-password>figcaption {
+    font-size: 76px;
+    color: rgb(25, 167, 249);
+
+}
+
+
+.button-check {
+    width: 100px;
+    height: 100px;
+    margin-top: 5%;
+}
+
+
+
+
+/* PARTE INFERIOR PASAPORTE*/
+
+.passport-bottom {
+    background-color: burlywood;
+    margin: 5%;
+    gap:5%;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Fondo de la imagen del cuerpo*/
+.margin-peak {
+    background-color: rgb(250, 218, 175);
+    padding: 10px;
+    border-radius: 16px;
+    position: relative;
+    aspect-ratio: 3 / 4;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+}
+
+/* Cuerpo */
+.body-peak {
+    width: 100%;
+    display: block;
+}
+
+/* Cara */
+.eyes-body {
+    width: 70%;
+    position: absolute;
+    top: 29%;
+    left: 15.5%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.eyes-body>img {
+    width: 100%;
+}
+
+
+.selector-peak {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    /* height: 95%; */
+    background-color: #f1c997;
+    /* transform: translateX(100px); */
+}
+
+
+.seleccion {
+    display: flex;
+    flex-direction:row-reverse; 
+    /* justify-content: center;
+    align-items: center;
+    gap: 15px;  
+    transform: translateX(-600px);  */
+}
+
+.seleccion>div{
+    display: flex;
+    flex-direction: column;
+    width: 15vh;
+    align-items: center;
+}
+
+.seleccion> div> img{
+    width: 70%;
+    gap:10px;
+}
 
 /* ===== FOOD SECTION =====*/
 
