@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Elememnto de los mapas que se verán de fondo todo el rato. 1 a la vez. -->
+        <div class="SlideMaps-Container">
+            <div class="Maps fade">
+                <img src="media/imagen/Costa_Fondo.png" />
+            </div>
+
+            <div class="Maps fade">
+                <img src="media/imagen/Trópico_Fondo.png" />
+            </div>
+
+            <div class="Maps fade">
+                <img src="media/imagen/Raices_Fondo.png" />
+            </div>
+
+            <div class="Maps fade">
+                <img src="media/imagen/Alpino_Fondo.webp" />
+            </div>
+
+            <div class="Maps fade">
+                <img src="media/imagen/Mesa_Fondo.png" />
+            </div>
+
+            <div class="Maps fade">
+                <img src="media/imagen/Caldera_Fondo.webp" />
+            </div>
+        </div>
+            
+        <div class="Tiquet"> 
+            <!-- Imagen base del tiquet del Tiquet -->
+            <img src="media/imagen/Billete.png">
+
+            <!-- Botones para pasar imagenes hacia adelante y hacia atras. -->
+            <a class="map-prev">
+                <img src="media/imagen/Billete_Boton.png">
+            </a>
+            <a class="map-next">
+                <img src="media/imagen/Billete_Boton.png">
+            </a>
+
+            <!-- Diferentes elementos de Texto que rotan junto al mapa. -->
+            <div class="mapText">
+                <div class="mapName">La Costa</div>
+                <div class="mapDescription"> La Costa es una playa de arena en las afueras de la isla con un gran acantilado montañoso adelante.</div>
+            </div>
+            <div class="mapText">
+                <div class="mapName">El Trópico</div>
+                <div class="mapDescription"> El Trópico es uno de los dos posibles segundos biomas después de la Costa. Se compone de una jungla con raíces de hiedra gigantes, árboles y enredaderas esparcidas por todo el acantilado.</div>
+            </div>
+            <div class="mapText">
+                <div class="mapName">Las Raíces</div>
+                <div class="mapDescription"> Las Raices es el segundo de los dos posibles segundos biomas después de la Costa. Está compuesto por un bosque de secuoyas infestado de setas.</div>
+            </div>
+            <div class="mapText">
+                <div class="mapName">El Alpino</div>
+                <div class="mapDescription"> El Alpino es uno de los dos posibles terceros biomas. Es una zona nevada y montañosa con un acantilado lleno de cuevas.</div>
+            </div>
+            <div class="mapText">
+                <div class="mapName">La Mesa</div>
+                <div class="mapDescription"> La Mesa es el segundo de los dos posibles terceros biomas. Es un desierto seco y cálido separado por un gran cañón.</div>
+            </div>
+            <div class="mapText">
+                <div class="mapName">La Caldera</div>
+                <div class="mapDescription"> La Caldera es el cuarto bioma. Es un gran lago de lava con varias formaciones rocosas altas.</div>
+            </div>
+
+            <!-- Boton de Start, manda al menu principal -->
+            <a href="index.html" class="map-start">
+                <img src="media/imagen/Billete_Start.png">
+            </a>
+        </div>
+
+
+
+        <!-- SCRIPT DE JS  -->
+         <script src="js/map_rotator.js"></script>
 </body>
+    <!-- Cargamos la libreria de JQuery Offline -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+
+    <!-- Cargamos la libreria de JQuery Online -->
+    
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    
+
+    <!-- Cargamos nuestro script -->
 </html>
