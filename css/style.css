@@ -1,17 +1,14 @@
 :root {
     --menu-bg: #d78356;
     --menu-text: black;
-
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* border: 1px red solid; */
-    /* font-size: 24px; */
+
 }
 
 .wrapper {
@@ -36,23 +33,10 @@ body {
 
 header {
     background-color: rgba(255, 255, 255, 0);
-    /* padding: 2rem 3rem;
-    margin: 1rem 2rem 3rem 7rem; */
-    /* padding: 3rem; */
-    /* height: 90vh; <- ESTO ROMPE EL FONDO */
-    /* width: 50%; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center; */
+
 }
 
-/* header>h1,
-header>p {
-
-    color: #e7b092;
-} */
-
+/* Imagen de fondo de la montaña que se ajusta a toda la pantalla */
 .fondo-montaña {
     display: flex;
     justify-content: center;
@@ -66,7 +50,7 @@ header>p {
     position: relative;
 
 }
-
+/* Imagen de los scouts puesto encima de la imagen de la montaña de fondo  */
 .fondo-scouts>h1 {
     font-size: clamp(8rem, 25vw, 25rem);
     position: absolute;
@@ -87,8 +71,7 @@ header>p {
 
 }
 
-
-
+/* Barra de navegacion */
 nav {
     background-color: var(--menu-bg);
 }
@@ -109,6 +92,8 @@ nav>ul>li>a {
     border-radius: 12px;
 }
 
+/* Cuando clicas en la barra de navegación hace una transición de color  */
+
 nav>ul>li>a:hover {
     color: var(--menu-bg);
     background-color: var(--menu-text);
@@ -121,10 +106,6 @@ main {
     background-color: #e9b595;
 }
 
-/* main>section {
-    padding: 2rem;
-    max-width: 1200px;
-} */
 
 
 /* ================ Hero 1 ================ */
@@ -153,24 +134,23 @@ main {
     font-size: 1.6rem;
 }
 
+/* Ajuste de imagen de la imagen del explorador con la linterna  */
+
 .image-hero {
     width: 50%;
 }
 
 .image-hero>img {
-    /* box-shadow: 3px 3px 3px black; */
     filter: drop-shadow(3px 3px 4px black);
     transition: 0.3s;
 }
+
+/* Cuando pones el raton encima se muestra una sombra */
 
 .image-hero>img:hover,
 .image-hero2>img:hover {
     filter: drop-shadow(12px 12px 8px black);
 }
-
-
-
-
 
 
 
@@ -199,6 +179,7 @@ main {
     font-size: 1.6rem;
 }
 
+/* Ajuste de la imagen del explorador comiendose una seta  */
 .image-hero2 {
     width: 50%;
 }
@@ -280,8 +261,6 @@ main {
 }
 
 
-
-
 /* ===== Footer ===== */
 
 footer {
@@ -342,10 +321,6 @@ footer>div {
     background-color: rgb(136, 136, 136);
 }
 
-/* Me permite seleccionar un elemento hijo por posicion */
-/* main > section.hero > div:nth-child(5) {
-
-} */
 
 
 /* GALLERY */
@@ -361,13 +336,7 @@ main>#gallery>.gallery-cont {
     gap: 1rem;
 }
 
-/* main > #gallery > .gallery-cont > img {
-    border-radius: 40px;
-} */
 
-
-/*Slide de clases*/
-/*Borrador*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -463,8 +432,6 @@ main>#gallery>.gallery-cont {
 }
 
 
-
-
 @keyframes fade {
     from {
         opacity: 0.4;
@@ -475,17 +442,6 @@ main>#gallery>.gallery-cont {
     }
 }
 
-/* MEDIA QUERY */
-
-
-/* ===== RESPONSIVE ===== */
-
-/* MEDIA  */
-/* @media screen and (max-width: 690px) {} */
-
-/* MEDIA MOVIL */
-
-/* @media (max-width: 480px) {} */
 
 
 /* MEDIA */
@@ -516,17 +472,6 @@ main>#gallery>.gallery-cont {
         gap: 2rem;
     }
 
-    /* rompe */
-    /* main>section.hero {
-        gap: 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    main>section.hero>div:first-child {
-        width: 100%;
-    } */
-
     main>#gallery>.gallery-cont {
         grid-template-columns: auto auto;
     }
@@ -549,17 +494,13 @@ main>#gallery>.gallery-cont {
         font-size: 1rem;
     }
 
-    /* main>section.hero>div:last-child {
-        width: 100%;
-    } */
-
     main>#gallery>.gallery-cont {
         grid-template-columns: auto;
         gap: 0;
     }
 
-
 }
+
 @media (max-width: 480px) {
     .beta {
         padding: 2rem 1rem;
