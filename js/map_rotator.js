@@ -10,11 +10,9 @@ console.log("Script Cargado");
 let slideIndex = 1;
 
 
-// Inicializamos una variable para guardar el estado de funcionamiento automatico
-let autoSlide;
-
-
-let arrDots = document.querySelectorAll(".dot");
+let arrSlides = document.querySelectorAll(".Maps");
+let arrDesc = document.querySelectorAll(".mapText")
+let maxSlides = arrSlides.length;
 
 showSlide(slideIndex);
 
@@ -26,11 +24,7 @@ showSlide(slideIndex);
 
 //creamos el bucle para asociar a cada punto un evento click y que se llama a la funcion currentDotSlide()
 
-for (let j = 0; j < arrDots.length; j++){
-    arrDots[j].addEventListener("click", function() {
-    currentDotSlide(j);
-    });
-}
+
 
 /**
  * 
@@ -74,6 +68,8 @@ function nextPrevSlide (Index) {
     showSlide(slideIndex);
 }
 
+    
+
 /**
  * 
  * @param {number} slideNumber
@@ -82,10 +78,6 @@ function nextPrevSlide (Index) {
  *  
  */
 function showSlide (slideNumber) {
-    let arrSlides = document.querySelectorAll(".Maps");
-    let arrDesc = document.querySelectorAll(".mapText")
-    let maxSlides = arrSlides.length;
-
 
     //comprabnado de que no estemos fuera de array
     if (slideNumber > maxSlides) {
@@ -99,12 +91,10 @@ function showSlide (slideNumber) {
     for (let i = 0; i < maxSlides; i++) {
         arrSlides[i].style.display = "none";
         arrDesc[i].style.display = "none";
-        arrDots[i].className = arrDots[i].className.replace(" active", "");
     }
 
     arrSlides[slideIndex-1].style.display = "block";
     arrDesc[slideIndex-1].style.display = "block";
-    arrDots[slideIndex - 1].className += " active";
 }
 
 //Automatizamos la llamada de la funcion NextPrevSlide, usando la funcion setInterval

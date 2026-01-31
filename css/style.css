@@ -397,8 +397,8 @@ main > #gallery > .gallery-cont {
     max-width: 720px;
     position:fixed;
     bottom: 0px;
-    left: 25%;
-    margin: 0px;
+    left: 50%;
+    margin-left: -360px;
 }
 
 /* Defining the buttons positions */
@@ -424,6 +424,19 @@ main > #gallery > .gallery-cont {
 
 .map-prev { 
     left: 370px;
+}
+
+.map-start {
+    cursor: pointer;
+    position: absolute;
+    width: 25%;
+    top: 31%;
+    left: 71.5%;
+    transition: 0.6s ease;
+}
+
+.map-start:hover{
+    top: 29.5%;
 }
 
 .map-prev:hover,
@@ -452,7 +465,4 @@ main > #gallery > .gallery-cont {
     max-width: 380px;
 }
 
-.dot{
-    display: none;
-}
 
