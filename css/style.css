@@ -180,7 +180,7 @@ main > section.hero > div:last-child > img:hover {
 
 .comida>div>img{
     position: absolute;
-    width: 300px;
+    width: 350px;
     opacity: 1;
     transition: 0.6s;
 }
@@ -192,77 +192,52 @@ main > section.hero > div:last-child > img:hover {
 
 .manzana{
     left: 9%; 
-    top: 12%;
-    width: 350px; 
+    top: 20%;
+    width: auto; 
     height: auto;
     display: block;
     font-family: Darumadrop One;
     font-size: 50px;
     text-align: justify;
     color: #fff;
-}
-
-.manzana p {
-    transform: translateX(160px); 
-    font-size: 50px;
-    color: #fff;
-    transition: 0.6s;
-    font-size: 120%;
 }
 
 .manzana p:hover {
   transform: translateX(160px) scale(1.05);
 }
 
-.seta p {
-    transform: translateX(140px); 
+.seta{
+    left: 35%;
+    top: 30%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
     font-size: 50px;
+    text-align: justify;
     color: #fff;
-    transition: 0.6s;
-    font-size: 120%;
 }
 
 .seta p:hover {
   transform: translateX(160px) scale(1.05);
 }
 
-.manzananevada p {
-    transform: translateX(160px);
+.manzananevada{
+    left: 68%;
+    top: 45%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
     font-size: 50px;
+    text-align: justify;
     color: #fff;
-    transition: 0.6s;
-    font-size: 110%;
 }
 
 .manzananevada p:hover {
   transform: translateX(160px) scale(1.05);
 }
 
-
-.seta{
-    left: 36%;
-    top: 28%;
-    width: 300px; 
-    height: auto;
-    display: block;
-    font-family: Darumadrop One;
-    font-size: 50px;
-    text-align: justify;
-    color: #fff;
-}
-
-
-.manzananevada{
-    left: 68%;
-    top: 38%;
-    width: 350px; 
-    height: auto;
-    display: block;
-    font-family: Darumadrop One;
-    font-size: 50px;
-    text-align: justify;
-    color: #fff;
-}
 
 .bodyComida {
     background-image: url(../media/imagen/Capibara.png);
@@ -288,7 +263,7 @@ main > section.hero > div:last-child > img:hover {
     left: 5%; 
     top: 70%;
     transition: 0.6s;
-    font-size: 105%;
+    font-size: 100%;
     text-shadow: 0.6s;
  }
 
@@ -301,7 +276,7 @@ main > section.hero > div:last-child > img:hover {
     left: 36%; 
     top: 63%;
     transition: 0.6s;
-    font-size: 105%;
+    font-size: 100%;
     text-shadow: 0.6s;
  }
 
@@ -314,7 +289,7 @@ main > section.hero > div:last-child > img:hover {
     left: 66%; 
     top: 83%;
     transition: 0.6s;
-    font-size: 105%;
+    font-size: 100%;
     text-shadow: 0.6s;
  }
 
@@ -326,7 +301,7 @@ main > section.hero > div:last-child > img:hover {
  .descripcion4{
     position:absolute;
     left: 80%; 
-    top: 30%;
+    top: 25%;
     transition: 0.6s;
     font-size: 120%;
     text-shadow: 0.6s;
