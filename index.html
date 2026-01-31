@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
 
 
 </head>
+
 <body>
     <div class="wrapper">
         <nav>
@@ -27,123 +29,134 @@
                 <li>
                     <a href="passport.html">Passport</a>
                 </li>
-                
-            </ul>
-        </nav>   
 
-       <header>
+            </ul>
+        </nav>
+
+        <header>
             <!-- <h1 style="color: blueviolet;">Repaso HTML5 y CSS3</h1> -->
-               <div>
-                <!-- <img src="media/imagen/Fondo_Montaña.png" alt=""> -->
-             </div>
-            <div>
-                <img src="media/imagen/Scouts.png">
-            </div> 
-       
-    
+            <div class="fondo-montaña ">
+                <div class="fondo-scouts">     
+                    <h1>PEAK</h1>
+                    <img src="media/imagen/Escaladores_Montaña.png">
+                </div>
+            </div>
+
+
         </header>
 
         <main>
             <section class="hero">
-                <div>
-                    
-                    <p id="textSpecial" class="text-special">PEAK es un juego cooperativo de escalada donde el más mínimo error puede significar tu perdición. Ya sea en solitario o como parte de un grupo de exploradores perdidos en la naturaleza, tu única esperanza de rescate de una isla misteriosa es escalar la montaña en su centro. ¿Tienes lo que se necesita para alcanzar la CIMA?</p>
-                   
+                <div class="text-hero">
+
+                    <p id="textSpecial" class="text-special">PEAK es un juego cooperativo de escalada donde el más
+                        mínimo error puede significar tu perdición. Ya sea en solitario o como parte de un grupo de
+                        exploradores perdidos en la naturaleza, tu única esperanza de rescate de una isla misteriosa es
+                        escalar la montaña en su centro. ¿Tienes lo que se necesita para alcanzar la CIMA?</p>
+
                 </div>
-                <div>
+                <div class="image-hero">
                     <img src="media/imagen/Esplorador_Con_Linterna.png" alt="">
                 </div>
             </section>
+
 
             <section>
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 3</div>
-                        <img src="media/imagen/Imagen_Bosque_Gameplay.png" >
+                        <img src="media/imagen/Imagen_Bosque_Gameplay.png">
                         <div class="text">Caption Text</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
-                        <img src="media/imagen/Costa.png" >
+                        <img src="media/imagen/Costa.png">
                         <div class="text">Caption Two</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
-                        <img src="media/imagen/Imagen_Lava_Gameplay.png" >
+                        <img src="media/imagen/Imagen_Lava_Gameplay.png">
                         <div class="text">Caption Three</div>
                     </div>
 
-                        <!-- Next and previous buttons -->
-                        <a class="prev">&#10094;</a>
-                        <a class="next">&#10095;</a>
-                    </div>
-                    <br />
+                    <!-- Next and previous buttons -->
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+                <br />
 
-                    <!-- The dots/circles -->
-                    <div style="text-align: center">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </section>
+                <!-- The dots/circles -->
+                <div style="text-align: center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
 
-                <section class="hero2">
-                    <div>
-                        <img src="media/imagen/Esplorador_Comiendo_Seta.png" alt="">
-                    </div>
-                    <div>
-                      
-                        <p id="textSpecial" class="text-special">Al iniciar un nuevo vestíbulo desde el menú principal, los jugadores son dejados en el Aeropuerto, donde pueden personalizar sus apariencias individuales como Exploradores, probar la mecánica y la física del juego escalando una pared de roca, y luego comenzar su aventura abordando el avión. Iniciar una nueva partida permite al jugador seleccionar el nivel de dificultad pulsando los botones "arriba" y "abajo" en la interfaz de la tarjeta de embarque.</p>
-                        
-                    </div>
-                </section> 
+            <section class="hero2">
+                <div class="image-hero2">
+                    <img src="media/imagen/Esplorador_Comiendo_Seta.png" alt="">
+                </div>
+                <div class="text-hero2">
 
-            
+                    <p id="textSpecial" class="text-special">Al iniciar un nuevo vestíbulo desde el menú principal, los
+                        jugadores son dejados en el Aeropuerto, donde pueden personalizar sus apariencias individuales
+                        como Exploradores, probar la mecánica y la física del juego escalando una pared de roca, y luego
+                        comenzar su aventura abordando el avión. Iniciar una nueva partida permite al jugador
+                        seleccionar el nivel de dificultad pulsando los botones "arriba" y "abajo" en la interfaz de la
+                        tarjeta de embarque.</p>
+
+                </div>
+            </section>
+
+
     </div>
 
-            <section class="beta">
-                <h2>¡ÚNETE A LA BETA YA!</h2>
+    <section class="beta">
+        <h2>¡ÚNETE A LA BETA YA!</h2>
 
-                <form class="beta-form">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" placeholder="BingBong">
+        <form class="beta-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="BingBong">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="IMissMyWife@Email.com">
-                </form>
-                
-                <div class="btn-group">
-                    <a href="#">Prueba la Beta</a>
-                </div>                
-            </section> 
-        </main>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="IMissMyWife@Email.com">
+        </form>
 
-        <footer>
+        <div class="btn-group">
+            <a href="food.html">Prueba la Beta</a>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div>
             <div>
-                <div>
-                    <img src="media/imagen/Logo_Landfall.png" alt="">
-                </div>
-                <div>
-                    <img src="media/imagen/Logo_Aggro_Crab_Blanco.png" alt="">
-                </div>                    
+                <img src="media/imagen/Logo_Landfall.png" alt="">
             </div>
-        </footer>
+            <div>
+                <img src="media/imagen/Logo_Aggro_Crab_Blanco.png" alt="">
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
 
-    <!-- Cargamos la libreria de JQuery Offline -->
-    <script src="lib/jquery-3.7.1.min.js"></script>
+<!-- Cargamos la libreria de JQuery Offline -->
+<script src="lib/jquery-3.7.1.min.js"></script>
 
-    <!-- Cargamos la libreria de JQuery Online -->
-    
-    
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-    
+<!-- Cargamos la libreria de JQuery Online -->
 
-    <!-- Cargamos nuestro script -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- Cargamos nuestro script -->
 
 </html>
