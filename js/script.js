@@ -32,15 +32,15 @@ let oneEyebtn = document.getElementById("eyes_One");
 
 oneEyebtn.onclick = function(){
     console.log("Has hecho click en Ojo uno");
-    picChange.src = "media/imagen/Pasaporte_Selector_Ojo1.png";
+    picChange.src = "media/imagen/Pasaporte_Ojo.png";
 };
 twoEyebtn.onclick = function() {
     console.log("Has hecho click en Ojo dos");
-    picChange.src = "media/imagen/Pasaporte_Selector_Ojo2.png";
+    picChange.src = "media/imagen/Pasaporte_Ojo2.png";
 };
 threeEyebtn.onclick = function(){
     console.log("Has hecho click en Ojo 3");
-    picChange.src= "media/imagen/Pasaporte_Selector_Ojo3.png";
+    picChange.src= "media/imagen/Pasaporte_Ojo3.png";
 };
 
 let skinYellowbtn = document.getElementById("skin_Three"); 
