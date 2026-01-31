@@ -1,12 +1,8 @@
 :root {
-    --menu-bg: yellowgreen;
+    --menu-bg: #d78356;
     --menu-text: black;
     
 }
-
-/*Plantilla copiada de Adrían*/
-/*HAY QUE BORRAR LOS ELEMENTOS QUE NO SE USAN EN CSS RELACIONADO CON LA PLANTILLA DE ADRI*/
-/*Srry por el guarreo*/
 
 
 * {
@@ -36,21 +32,39 @@ body {
 }
 
 header {
-    background-color: rgb(32, 0, 61);
+   background-color: rgba(255, 255, 255, 0);
     /* padding: 2rem 3rem;
     margin: 1rem 2rem 3rem 7rem; */
     padding: 3rem;
-    height: 50vh;
+    height: 90vh;
     /* width: 50%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+   /* Para el condo de las montañas */
+    background-image: url(../media/imagen/Fondo_Montaña.png); 
+    background-size: cover;
 }
 
-header > h1,
+/* header > h1,
 header > p {
-    color: aliceblue;
+    
+    color: #e7b092;
+}
+header >div:first-child{
+   position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -2;
+}
+header > div:first-child > img{
+        object-fit: cover;
+} */
+header > div:last-child{
+    position: absolute;
+    width: 100%;
+    bottom: 0vh;
 }
 
 nav {
@@ -82,12 +96,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #e9b595;
 }
 
 main > section {
     padding: 2rem;
     max-width: 1200px;
 }
+
+
+/* ===== Hero 1 ====== */
 
 main > section.hero {
     display: flex;
@@ -126,15 +144,53 @@ main > section.hero > div:last-child > img:hover {
     filter: drop-shadow(12px 12px 8px black);
 }
 
+/* ===== Hero 2 ====== */
+main > section.hero2 {
+    display: flex;
+    gap: 1rem;
+}
+
+main > section.hero2 > div:last-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+main > section.hero2 > div:last-child > h2 {
+    font-size: 6rem;
+    color: var(--menu-bg);
+    text-shadow: 2px 2px 2px black;
+}
+
+main > section.hero2 > div:last-child > p {
+    font-size: 1.6rem;
+}
+
+main > section.hero2 > div:first-child {
+    width: 50%;
+}
+
+main > section.hero2 > div:first-child > img {
+    /* box-shadow: 3px 3px 3px black; */
+    filter: drop-shadow(3px 3px 4px black);
+    transition: 0.3s;
+}
+
+main > section.hero2 > div:first-child > img:hover {
+    filter: drop-shadow(12px 12px 8px black);
+}
+
 /* ===== BETA SECTION ===== */
 .beta {
     background-color: #e9b595;
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
 }
 
@@ -173,17 +229,540 @@ main > section.hero > div:last-child > img:hover {
     color: #9a9a9a;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-    .beta {
-        padding: 2rem 1rem;
-    }
+/* ===== FOOD SECTION =====*/
 
-    .beta-form {
-        max-width: 100%;
-    }
+/* Código que se encarga del aspecto de las imágenes en la web y sus animaciones */
+
+.comida>div{
+    position: absolute;
 }
 
+.comida>div>img{
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.comida>div>img:hover{
+    opacity: 0.9;
+    transform:scale(1);
+}
+
+/* Sección manzana */
+
+.manzana{
+    left: 9%; 
+    top: 20%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzana p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de seta */
+
+.seta{
+    left: 35%;
+    top: 30%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.seta p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de la manzana nevada */
+
+.manzananevada{
+    left: 68%;
+    top: 45%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzananevada p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Fondo de la página */
+
+.bodyComida {
+    background-image: url(../media/imagen/Capibara.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ /* Código correspondiente al texto del html , animaciones y su aspecto en la web */
+
+ .texto{
+    margin: 2%;
+    padding: 2%;
+    font-family: Darumadrop One;
+    font-size: 28px;
+    text-align: justify;
+    color: #fff;
+ }
+
+ .texto > div{
+    position: absolute;
+ }
+
+ .descripcion1{
+    left: 5%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion1:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+  .descripcion2{
+    left: 36%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion2:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.descripcion3{
+    left: 66%; 
+    top: 83%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion3:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* sección inter link al html pasaporte */
+
+ .descripcion4{
+    position:absolute;
+    left: 82%; 
+    top: 25%;
+    transition: 0.6s;
+    font-size: 110%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion4 p{
+    color:#fff;
+    text-decoration: underline;
+ }
+
+.descripcion4:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+/* ===== MAP =====*/
+
+
+
+/* ===== PASSPORT =====*/
+
+.Main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../media/imagen/Fondo_pasaporte.png);
+    background-repeat: repeat; 
+    background-size: auto;     
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.passport-top {
+    margin-inline: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/* PARTE SUPERIOR PASAPORTE*/
+
+
+
+.montain-password {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.montain-password>img {
+    width: 100px;
+    margin-bottom: -50px;
+}
+
+.montain-password>figcaption {
+    font-size: 76px;
+    color: rgb(25, 167, 249);
+
+}
+
+
+.button-check {
+    width: 100px;
+    height: 100px;
+    margin-top: 5%;
+}
+
+
+
+
+/* PARTE INFERIOR PASAPORTE*/
+
+.passport-bottom {
+    background-color: burlywood;
+    margin: 15px;
+    gap:5%;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Fondo de la imagen del cuerpo*/
+.margin-peak {
+    background-color: rgb(250, 218, 175);
+    padding: 10px;
+    border-radius: 16px;
+    position: relative;
+    aspect-ratio: 3 / 4;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+}
+
+/* Cuerpo */
+.body-peak {
+    width: 100%;
+    display: block;
+}
+
+/* Cara */
+.eyes-body {
+    width: 70%;
+    position: absolute;
+    top: 29%;
+    left: 15.5%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.eyes-body>img {
+    width: 100%;
+}
+
+
+.selector-peak {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    /* height: 95%; */
+    background-color: #f1c997;
+    /* transform: translateX(100px); */
+}
+
+
+.seleccion {
+    display: flex;
+    flex-direction:row-reverse; 
+    /* justify-content: center;
+    align-items: center;
+    gap: 15px;  
+    transform: translateX(-600px);  */
+}
+
+.seleccion>div{
+    display: flex;
+    flex-direction: column;
+    width: 20vh;
+    align-items: center;
+}
+
+.seleccion> div> img{
+    width: 70%;
+    gap:10px;
+}
+
+/* ===== FOOD SECTION =====*/
+
+/* Código que se encarga del aspecto de las imágenes en la web y sus animaciones */
+
+.comida>div{
+    position: absolute;
+}
+
+.comida>div>img{
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.comida>div>img:hover{
+    opacity: 0.9;
+    transform:scale(1);
+}
+
+/* Sección manzana */
+
+.manzana{
+    left: 9%; 
+    top: 20%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzana p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de seta */
+
+.seta{
+    left: 35%;
+    top: 30%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.seta p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de la manzana nevada */
+
+.manzananevada{
+    left: 68%;
+    top: 45%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzananevada p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Fondo de la página */
+
+.bodyComida {
+    background-image: url(../media/imagen/Capibara.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ /* Código correspondiente al texto del html , animaciones y su aspecto en la web */
+
+ .texto{
+    margin: 2%;
+    padding: 2%;
+    font-family: Darumadrop One;
+    font-size: 28px;
+    text-align: justify;
+    color: #fff;
+ }
+
+ .texto > div{
+    position: absolute;
+ }
+
+ .descripcion1{
+    left: 5%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion1:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+  .descripcion2{
+    left: 36%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion2:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.descripcion3{
+    left: 66%; 
+    top: 83%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion3:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* sección inter link al html pasaporte */
+
+ .descripcion4{
+    position:absolute;
+    left: 82%; 
+    top: 25%;
+    transition: 0.6s;
+    font-size: 110%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion4 p{
+    color:#fff;
+    text-decoration: underline;
+ }
+
+.descripcion4:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+/* ===== MAP =====*/
+
+
+
+/* ===== PASSPORT =====*/
+
+
+
+
+
+
+/* ===== Footer ===== */
+
+footer{
+
+    background-color: #D78356;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+footer > div{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+/* Botones */
+
+.btn-group{
+    display: flex;
+    gap: 24px;
+    padding: 10px
+}
+
+
+/* Propiedades comunes a los 2 botones */
+.btn-group > a {
+    padding: 8px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 15px;
+    
+}
+
+.btn-group > a:first-child{
+    background-color: #FF9FE2;
+    color:rgb(14, 21, 27);
+    transition: 500ms;
+}
+
+.btn-group > a:last-child{
+    border: 1px black solid;
+}
+
+/*Efectos Hover sobre los Botones*/
+/* Este selector solo se ativara cuando el cursor pase por encima del boton */
+
+.btn-group> a:first-child:hover{
+    background-color: rgb(189, 165, 29);
+}
+
+.btn-group> a:last-child:hover{
+    background-color: rgb(136, 136, 136);
+}
 
 /* Me permite seleccionar un elemento hijo por posicion */
 /* main > section.hero > div:nth-child(5) {
@@ -305,6 +884,9 @@ main > #gallery > .gallery-cont {
     animation-duration: 1.5s;
 }
 
+
+
+
 @keyframes fade {
     from {
         opacity: 0.4;
@@ -314,8 +896,19 @@ main > #gallery > .gallery-cont {
     }
 }
 
-
 /* MEDIA QUERY */
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .beta {
+        padding: 2rem 1rem;
+    }
+
+    .beta-form {
+        max-width: 100%;
+    }
+}
 
 /* TABLET */
 @media screen and (max-width: 690px) {
