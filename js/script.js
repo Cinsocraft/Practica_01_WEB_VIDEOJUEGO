@@ -18,6 +18,24 @@ let autoSlide;
 let arrDots=document.querySelectorAll(".dot");
 console.log(arrDots);
 
+let imgchange = document.getElementById("imgchange");
+
+// Personaje editor
+
+let skinYellowbtn = document.getElementById("skin_Three"); 
+let skinRedbtn = document.getElementById("skin_Two");
+let skinOraganbtn = document.getElementById("skin_One");
+
+skinYellowbtn.onclick = function(){
+    imgchange.src = "media/imagen/Pasaporte_Cuerpo_Amarillo.png";
+};
+skinRedbtn.onclick = function() {
+    imgchange.src = "media/imagen/Pasaporte_Cuerpo_Rojo.png";
+};
+skinOraganbtn.onclick = function(){
+    imgchange.src= "media/imagen/Pasaporte_Cuerpo_Naranja.png";
+};
+
 showSlide(slideIndex); /* */
 
 
@@ -131,40 +149,5 @@ autoSlide = setInterval(function(){
 }
 
 function stopAutoslide(){
-
-clearInterval(autoSlide);
-
+    clearInterval(autoSlide);
 }
-
-// Personaje editor
-console.log= ("Hola");
-
-let skinYellowbtn = document.getElementById("skinYellow");
-
-let skinRedbtn = document.getElementById("skinYellow");
-
-let skinOraganbtn = document.getElementById("skinOragen");
-
-let imgchange = document.getElementById("imgchange");
-
-
-
-skinRedbtn.onclick = function() {
-
-    imgchange.src = "media\imagen\Pasaporte_Cuerpo_Rojo.png";
-
-}
-
-
-skinYellowbtn.onclick = function(){
-
-    imgchange.src = "media\imagen\Pasaporte_Cuerpo_Amarillo.png";
-
-}
-
-
-skinOraganbtn.onclick = function(){
-    imgchange.src= "media\imagen\Pasaporte_Cuerpo_Naranja.png";
-}
-
-// "media\imagen\Pasaporte_Cuerpo_Naranja.png";
