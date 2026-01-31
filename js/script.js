@@ -136,3 +136,6 @@ clearInterval(autoSlide);
 
 }
 
+// Personaje editor
+
+document.getElementById("").src="";
