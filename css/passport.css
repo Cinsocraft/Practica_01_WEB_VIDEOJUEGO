@@ -4,22 +4,33 @@
     font-family: Darumadrop One;
 }
 
+.wrapper{
+    margin: 0;
+    padding: 0;
+}
+
 main {
     min-height: 100vh;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-image: url(../media/imagen/Fondo_pasaporte.png);
     background-repeat: repeat; 
     background-size: auto;     
 }
 
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 
-
-.passport-top,
-.passport-bottom {
+.passport-top {
     margin-inline: 10%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -59,7 +70,11 @@ main {
 
 .passport-bottom {
     background-color: burlywood;
-    margin-top: 150px;
+    margin: 5%;
+    gap:5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 /* Fondo de la imagen del cuerpo*/
@@ -69,6 +84,12 @@ main {
     border-radius: 16px;
     position: relative;
     aspect-ratio: 3 / 4;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
 }
 
 /* Cuerpo */
@@ -81,9 +102,9 @@ main {
 .eyes-body {
     width: 70%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 29%;
+    left: 15.5%;
+    /* transform: translate(-50%, -50%); */
 }
 
 .eyes-body>img {
@@ -93,18 +114,36 @@ main {
 
 .selector-peak {
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
     width: 100%;
-    height: 95%;
-    /* background-color: brown; */
-    transform: translateX(100px);
+    align-items: center;
+    /* height: 95%; */
+    background-color: brown;
+    /* transform: translateX(100px); */
 }
 
 
 .seleccion {
     display: flex;
-    flex-direction: column;
+    flex-direction:row-reverse; 
     /* justify-content: center;
     align-items: center;
     gap: 15px;  
     transform: translateX(-600px);  */
+}
+
+.seleccion>div{
+    display: flex;
+    flex-direction: column;
+    width: 15vh;
+    align-items: center;
+}
+
+.seleccion> div> img{
+    width: 70%;
+    gap:10px;
 }
