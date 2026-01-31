@@ -229,6 +229,340 @@ main > section.hero2 > div:first-child > img:hover {
     color: #9a9a9a;
 }
 
+/* ===== FOOD SECTION =====*/
+
+/* Código que se encarga del aspecto de las imágenes en la web y sus animaciones */
+
+.comida>div{
+    position: absolute;
+}
+
+.comida>div>img{
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.comida>div>img:hover{
+    opacity: 0.9;
+    transform:scale(1);
+}
+
+/* Sección manzana */
+
+.manzana{
+    left: 9%; 
+    top: 20%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzana p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de seta */
+
+.seta{
+    left: 35%;
+    top: 30%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.seta p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de la manzana nevada */
+
+.manzananevada{
+    left: 68%;
+    top: 45%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzananevada p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Fondo de la página */
+
+.bodyComida {
+    background-image: url(../media/imagen/Capibara.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ /* Código correspondiente al texto del html , animaciones y su aspecto en la web */
+
+ .texto{
+    margin: 2%;
+    padding: 2%;
+    font-family: Darumadrop One;
+    font-size: 28px;
+    text-align: justify;
+    color: #fff;
+ }
+
+ .texto > div{
+    position: absolute;
+ }
+
+ .descripcion1{
+    left: 5%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion1:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+  .descripcion2{
+    left: 36%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion2:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.descripcion3{
+    left: 66%; 
+    top: 83%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion3:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* sección inter link al html pasaporte */
+
+ .descripcion4{
+    position:absolute;
+    left: 82%; 
+    top: 25%;
+    transition: 0.6s;
+    font-size: 110%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion4 p{
+    color:#fff;
+    text-decoration: underline;
+ }
+
+.descripcion4:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+/* ===== MAP =====*/
+
+
+
+/* ===== PASSPORT =====*/
+
+
+
+/* ===== FOOD SECTION =====*/
+
+/* Código que se encarga del aspecto de las imágenes en la web y sus animaciones */
+
+.comida>div{
+    position: absolute;
+}
+
+.comida>div>img{
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.comida>div>img:hover{
+    opacity: 0.9;
+    transform:scale(1);
+}
+
+/* Sección manzana */
+
+.manzana{
+    left: 9%; 
+    top: 20%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzana p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de seta */
+
+.seta{
+    left: 35%;
+    top: 30%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.seta p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Sección de la manzana nevada */
+
+.manzananevada{
+    left: 68%;
+    top: 45%;
+    width: auto; 
+    height: auto;
+    display: block;
+    font-family: Darumadrop One;
+    font-size: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+.manzananevada p:hover {
+  transform: translateX(160px) scale(1.05);
+}
+
+/* Fondo de la página */
+
+.bodyComida {
+    background-image: url(../media/imagen/Capibara.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ /* Código correspondiente al texto del html , animaciones y su aspecto en la web */
+
+ .texto{
+    margin: 2%;
+    padding: 2%;
+    font-family: Darumadrop One;
+    font-size: 28px;
+    text-align: justify;
+    color: #fff;
+ }
+
+ .texto > div{
+    position: absolute;
+ }
+
+ .descripcion1{
+    left: 5%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion1:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+  .descripcion2{
+    left: 36%; 
+    top: 70%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion2:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.descripcion3{
+    left: 66%; 
+    top: 83%;
+    transition: 0.6s;
+    font-size: 90%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion3:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* sección inter link al html pasaporte */
+
+ .descripcion4{
+    position:absolute;
+    left: 82%; 
+    top: 25%;
+    transition: 0.6s;
+    font-size: 110%;
+    text-shadow: 0.6s;
+ }
+
+ .descripcion4 p{
+    color:#fff;
+    text-decoration: underline;
+ }
+
+.descripcion4:hover {
+  transform: scale(1.1);
+  text-shadow:0 0 6px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+/* ===== MAP =====*/
+
+
+
+/* ===== PASSPORT =====*/
+
+
+
 
 
 
