@@ -31,8 +31,8 @@ img {
 .passport-top {
     margin-inline: 10%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 
