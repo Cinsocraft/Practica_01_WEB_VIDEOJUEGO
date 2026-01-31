@@ -18,22 +18,47 @@ let autoSlide;
 let arrDots=document.querySelectorAll(".dot");
 console.log(arrDots);
 
-let imgchange = document.getElementById("imgchange");
+
+
 
 // Personaje editor
+
+let imgChange = document.getElementById("imgchangeBody");
+
+let picChange = document.getElementById("imgchangeEyes");
+
+let threeEyebtn = document.getElementById("eyes_Three"); 
+let twoEyebtn = document.getElementById("eyes_Two");
+let oneEyebtn = document.getElementById("eyes_One");
 
 let skinYellowbtn = document.getElementById("skin_Three"); 
 let skinRedbtn = document.getElementById("skin_Two");
 let skinOraganbtn = document.getElementById("skin_One");
 
+oneEyebtn.onclick = function(){
+    console.log("Has hecho click en Ojo uno");
+    picChange.src = "media/imagen/Pasaporte_Selector_Ojo1.png";
+};
+twoEyebtn.onclick = function() {
+    console.log("Has hecho click en Ojo dos");
+    picChange.src = "media/imagen/Pasaporte_Selector_Ojo2.png";
+};
+threeEyebtn.onclick = function(){
+    console.log("Has hecho click en Ojo 3");
+    picChange.src= "media/imagen/Pasaporte_Selector_Ojo3.png";
+};
+
+
 skinYellowbtn.onclick = function(){
-    imgchange.src = "media/imagen/Pasaporte_Cuerpo_Amarillo.png";
+    console.log("Has hecho click en Amarillo");
+    imgChange.src = "media/imagen/Pasaporte_Cuerpo_Amarillo.png";
 };
 skinRedbtn.onclick = function() {
-    imgchange.src = "media/imagen/Pasaporte_Cuerpo_Rojo.png";
+    imgChange.src = "media/imagen/Pasaporte_Cuerpo_Rojo.png";
 };
 skinOraganbtn.onclick = function(){
-    imgchange.src= "media/imagen/Pasaporte_Cuerpo_Naranja.png";
+    console.log("Has hecho click en naranja");
+    imgChange.src= "media/imagen/Pasaporte_Cuerpo_Naranja.png";
 };
 
 showSlide(slideIndex); /* */
@@ -149,5 +174,11 @@ autoSlide = setInterval(function(){
 }
 
 function stopAutoslide(){
-    clearInterval(autoSlide);
+
+clearInterval(autoSlide);
+
 }
+
+
+
+// "media\imagen\Pasaporte_Cuerpo_Naranja.png";
