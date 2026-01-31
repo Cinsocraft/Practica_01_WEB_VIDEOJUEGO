@@ -455,7 +455,7 @@ img {
 
 .passport-bottom {
     background-color: burlywood;
-    margin: 5%;
+    margin: 15px;
     gap:5%;
     border-radius: 40px;
     display: flex;
@@ -525,7 +525,7 @@ img {
 .seleccion>div{
     display: flex;
     flex-direction: column;
-    width: 15vh;
+    width: 20vh;
     align-items: center;
 }
 
