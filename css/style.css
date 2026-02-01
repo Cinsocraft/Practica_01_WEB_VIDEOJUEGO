@@ -16,6 +16,8 @@
     padding: 0;
 }
 
+a {cursor: pointer;}
+
 /* Con este selector hacemos que todas imagenes que carguemos por defecto sean responsive */
 img {
     width: 100%;
@@ -561,6 +563,7 @@ img {
 }
 
 .seleccion> div> img{
+    cursor: pointer;
     width: 70%;
     gap:10px;
 }
