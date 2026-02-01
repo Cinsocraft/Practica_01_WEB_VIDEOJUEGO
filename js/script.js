@@ -1,3 +1,17 @@
+$(document).ready(function() {
+  $('a').on('click', function(e) {
+    e.preventDefault(); // Prevent immediate navigation
+    
+    const href = $(this).attr('href'); // Store the target URL
+    
+    // Fade out the entire page
+    $('body').fadeOut(400, function() {
+      // After fade out completes, redirect to the original page
+      window.location.href = href;
+    });
+  });
+});
+
 /**
  *  
  * Funciones para el funcianamiento del componente slide-show 
