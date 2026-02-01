@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <div class="wrapper">
         <nav>
             <ul>
@@ -48,7 +49,7 @@
 
         <main>
             <section class="hero">
-                <div class="text-hero">
+                <div data-aos="fade-right" class="text-hero">
 
                     <p id="textSpecial" class="text-special">PEAK es un juego cooperativo de escalada donde el más
                         mínimo error puede significar tu perdición. Ya sea en solitario o como parte de un grupo de
@@ -56,7 +57,7 @@
                         escalar la montaña en su centro. ¿Tienes lo que se necesita para alcanzar la CIMA?</p>
 
                 </div>
-                <div class="image-hero">
+                <div data-aos="fade-left" class="image-hero">
                     <img src="media/imagen/Esplorador_Con_Linterna.png" alt="">
                 </div>
             </section>
@@ -98,12 +99,12 @@
             </section>
 
             <section class="hero2">
-                <div class="image-hero2">
+                <div class="image-hero2" data-aos="fade-right">
                     <img src="media/imagen/Esplorador_Comiendo_Seta.png" alt="">
                 </div>
                 <div class="text-hero2">
 
-                    <p id="textSpecial" class="text-special">Al iniciar un nuevo vestíbulo desde el menú principal, los
+                    <p id="textSpecial" class="text-special" data-aos="fade-left">Al iniciar un nuevo vestíbulo desde el menú principal, los
                         jugadores son dejados en el Aeropuerto, donde pueden personalizar sus apariencias individuales
                         como Exploradores, probar la mecánica y la física del juego escalando una pared de roca, y luego
                         comenzar su aventura abordando el avión. Iniciar una nueva partida permite al jugador
@@ -117,9 +118,9 @@
     </div>
 
     <section class="beta">
-        <h2>¡ÚNETE A LA BETA YA!</h2>
+        <h2 data-aos="zoom-out" >¡ÚNETE A LA BETA YA!</h2>
 
-        <form class="beta-form">
+        <form data-aos="fade-up" class="beta-form">
             <label for="name">Nombre</label>
             <input type="text" id="name" placeholder="BingBong">
 
@@ -127,7 +128,7 @@
             <input type="email" id="email" placeholder="IMissMyWife@Email.com">
         </form>
 
-        <div class="btn-group">
+        <div data-aos="zoom-out" class="btn-group">
              <a href="food.html">Prueba la Beta</a>
         </div>
     </section>
@@ -160,6 +161,10 @@
 
 <!-- Cargamos libreria aos -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <!-- Cargamos nuestro script -->
 <script src="js/script.js"></script>
